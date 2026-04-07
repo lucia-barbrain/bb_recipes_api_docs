@@ -6,7 +6,7 @@
 
 This guide explains how to use the BarBrain Recipe COGS API to fetch Cost of Goods Sold (COGS) data for recipes programmatically, typically for POS integrations, profitability dashboards, or menu engineering tools.
 
-> **Interactive API Reference:** Explore and test the API in the [Swagger UI](https://app.swaggerhub.com/apis-docs/barbrain/barbrain-recipe-cogs-api/1.0.0?view=uiDocs).
+> **Interactive API Reference:** Explore and test the API in the [Swagger UI](https://app.swaggerhub.com/apis-docs/barbrain/barbrain-recipe-cogs-api/1.0.0).
 
 ## Overview
 
