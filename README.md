@@ -1,10 +1,12 @@
 # BarBrain's Recipe COGS API - User Guide
 
-> **Last Updated:** February 27, 2026
-> **Owner:** Lucia Schlegel
-> **Status:** Draft
+> **Last Updated:** April 7, 2026
+> **Owner:** BarBrain GmbH
+> **Status:** Published
 
 This guide explains how to use the BarBrain Recipe COGS API to fetch Cost of Goods Sold (COGS) data for recipes programmatically, typically for POS integrations, profitability dashboards, or menu engineering tools.
+
+> **Interactive API Reference:** Explore and test the API in the [Swagger UI](https://app.swaggerhub.com/apis-docs/barbrain/barbrain-recipe-cogs-api/1.0.0?view=uiDocs).
 
 ## Overview
 
@@ -482,7 +484,7 @@ curl -X POST "https://api.barbrain.com/v2-live/fetchBatchRecipeIngredientCogs" \
 
 ### Partial Success — Some Recipes Not Found or Not Calculable
 
-The batch endpoint uses a **best-effort** approach: it returns results for all recipes it can resolve, and reports errors for those it cannot. The HTTP status is still **200 OK** as long as at least one recipe succeeds.
+The batch endpoint uses a **best-effort** approach: it returns results for all recipes it can resolve, and reports errors for those it cannot. The HTTP status is **200 OK** as long as the request itself is valid — even if all individual recipes fail. Always check the `errors` array to detect per-recipe failures.
 
 ```json
 {
